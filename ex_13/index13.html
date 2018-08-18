@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html>
+<head>
+    <h3>Create User</h3>
+</head>
+    <hr>
+    <body>
+    <form>
+            <label>
+              Name:
+              <input type="text" name="name" />
+            </label>
+            <label>
+              Surname:
+              <input type="text" name="surname" />
+            </label>
+          </form>
+          <form>
+             <select name="select your favorite movie" multiple="Options" size="10">
+                  <option value="deadpool">Deadpool</option>
+                  <option value="batman_vs_superman">Batman v Superman</option>
+                  <option value="civil war">Captain America: Civil War</option>
+                  <option value="doctor_strange">Doctor Strange</option>
+                  <option value="apocalypse">X-Men: Apocalypse</option>
+                  <option value="gotg_vol2">Guardians of the Galaxy Vol 2</option>
+                  <option value="justice_league">Justice League</option>
+                  <option value="logan">Logan</option>
+                  <option value="homecoming">Spider-Man: Homecoming </option>
+                  <option value="thor_ragnarok">Thor: Ragnarok</option>
+                  <option value="black_panther">Black Panther</option>
+                  <option value="wonder_woman" selected="selected"> Wonder Woman </option>
+                </select>
+              </form>
+              <textarea name="about" placeholder="Please let us know about yourself" maxlength="30" size="30"></textarea> </textarea>
+              <form action="upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="filename" />
+                <input type="file" name="filename" multiple="multiple" />
+                <input type="file" name="filename" multiple />
+              </form>
+              <fieldset>
+                    <legend>Profile</legend>
+                
+                    <div>
+                        <label for="name">Display name:</label>
+                        <input type="text" id="name" name="name"/>
+                    </div>
+                
+                    <div>
+                        <label for="avatar">Profile picture:</label>
+                        <input type="file"
+                               id="avatar" name="avatar"
+                               accept="image/png, image/jpeg" />
+                    </div>
+                
+                </fieldset>
+                
+
+              <form>
+                    <button value="Clear Form" name="Clear Form">+ Clear Form</button>
+                  </form>
+                  <form>
+                        <button value="Add New User" name="Add New User">+ Add New User</button>
+                      </form>
+                      
+            </body>
+              </html>
